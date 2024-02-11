@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sito web di anime e manga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>OtakuForEver</h1>
+    <form action="/cerca">
+      <input type="text" name="query" placeholder="Cerca anime, manga, action figure o gadget">
+      <button type="submit">Cerca</button>
+    </form>
+  </header>
+  <main>
+    <h2>Novità</h2>
+    <ul class="novita">
+      <li>
+        <a href="/manga/titolo-manga">
+          <img src="immagine-manga.jpg" alt="Immagine manga">
+          <h3>Titolo manga</h3>
+        </a>
+      </li>
+      </ul>
+    <h2>Anime e Manga</h2>
+    <ul class="anime-manga">
+      <form action="/anime-manga">
+        Genere:
+        <select name="genere">
+          <option value="">Tutti</option>
+          <option value="shonen">Shonen</option>
+          <option value="shojo">Shojo</option>
+          </select>
+        Anno:
+        <input type="number" name="anno">
+        <button type="submit">Filtra</button>
+      </form>
+      <li>
+        <a href="/anime/titolo-anime">
+          <img src="immagine-anime.jpg" alt="Immagine anime">
+          <h3>Titolo anime</h3>
+        </a>
+      </li>
+      </ul>
+    <h2>Negozio</h2>
+    <ul class="negozio">
+      <li><a href="/negozio/manga">Manga</a></li>
+      <li><a href="/negozio/action-figure">Action figure</a></li>
+      <li><a href="/negozio/gadget">Gadget</a></li>
+    </ul>
+    <h2>Community</h2>
+    <ul class="community">
+      <li><a href="/forum">Forum</a></li>
+      <li><a href="/recensioni">Recensioni</a></li>
+    </ul>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="/termini-servizio">Termini di servizio</a></li>
+      <li><a href="/privacy-policy">Politica sulla privacy</a></li>
+      <li><a href="/faq">Domande frequenti</a></li>
+    </ul>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/nome-sito"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.twitter.com/nome-sito"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/nome-sito"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
